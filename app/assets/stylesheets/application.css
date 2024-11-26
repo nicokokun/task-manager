@@ -1,0 +1,54 @@
+@import "bootstrap";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require themes
+ *= require_tree .
+ *= require_self
+ */
+
+ /* app/assets/stylesheets/application.css */
+
+body.light-theme {
+  --main-color: #f9fafb;
+  --font-color: #111827;
+  --table-border: #111827;
+}
+
+body.dark-theme {
+  --main-color: #111827;
+  --font-color: #ffffff;
+  --table-border: #f9fafb;
+}
+
+body.solarized-theme {
+  --main-color: #fdf6e3;
+  --font-color: #657b83;
+  --table-border: #111827;
+}
+header {
+  div.container {
+    display: flex;
+    h1 {
+      flex: 1;
+    }
+  }
+}
+  
+body {
+  background-color: var(--main-color);
+  color: var(--font-color);
+  header {
+    background-color: var(--main-color)!important;
+  }
+  color: var(--font-color)!important;
+}

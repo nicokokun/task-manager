@@ -1,0 +1,10 @@
+<tr>
+  <td><%= task.title %></td>
+  <td><%= task.description %></td>
+  <td><%= task.completed ? "Yes" : "No" %></td>
+  <td>
+    <%= link_to "Show", task_path(task), data: { turbo_frame: "tasks_list" } %>
+    <%= link_to "Edit", edit_task_path(task), data: { turbo_frame: "task_form" } %>
+    <%= link_to "Delete", task_path(task), method: :delete, data: { confirm: "Are you sure?", turbo_frame: "tasks_list" } %>
+  </td>
+</tr>

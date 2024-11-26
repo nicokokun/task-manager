@@ -1,0 +1,11 @@
+{
+  "name": "task_manager",
+  "private": true,
+  "dependencies": {
+    "@hotwired/turbo-rails": "^8.0.12",
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.15"
+  }
+}

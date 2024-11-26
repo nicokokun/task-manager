@@ -1,0 +1,8 @@
+<h1>Tasks</h1>
+<%= link_to "New Task", new_task_path, data: { turbo_frame: "task_form" } %>
+
+<div id="tasks_list">
+  <%= render partial: "tasks", locals: { tasks: @tasks } %>
+</div>
+
+<turbo-frame id="task_form"></turbo-frame>

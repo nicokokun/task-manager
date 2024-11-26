@@ -1,0 +1,18 @@
+# Rails default ignores
+/.bundle
+/log/*
+/tmp/*
+/db/*.sqlite3
+/db/schema.rb
+/db/migrate/*
+
+# Ignore the secret credentials file if it's being used
+/config/credentials.yml.enc
+/config/master.key
+
+# Ignore environment configuration files
+/config/environments/*
+
+# Ignore node_modules and package-lock.json for front-end
+/node_modules
+/yarn.lock
